@@ -7,7 +7,7 @@ draw_text(550, 40,"number of enemys: " + string(obj_enemy_spawn.enemys));
 
 draw_text(550, 64,"number of wave: " + string(obj_enemy_spawn.wave));
 
-
+draw_text(50, 540,"bulletsize upgrade: " + string(global.upgrades.bullet_size));
 draw_text(50, 640,"damage upgrade: " + string(global.upgrades.bullet_damage));
 draw_text(50, 620,"attspd upgrade: " + string(global.upgrades.bullet_frequence));
 draw_text(50, 600,"stability upgrade: " + string(global.upgrades.bullet_stability));

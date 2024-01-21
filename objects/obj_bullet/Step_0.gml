@@ -1,8 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-image_xscale = image_xscale;
-image_yscale = image_xscale;
-
 if(place_meeting(x, y, obj_colider)){
 	instance_destroy();
 }

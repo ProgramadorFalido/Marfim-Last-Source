@@ -20,10 +20,10 @@ else if(x <= obj_player.x - distance){
 
 
 
-if(y < obj_player.y - 400 + ydistance){
+if(y < obj_player.y - 300 + ydistance){
 	vertical_speed = lerp(vertical_speed, 3, 0.005);
 }
-else if(y > obj_player.y - 400 +ydistance){
+else if(y > obj_player.y - 300 +ydistance){
 	vertical_speed = lerp(vertical_speed, -3, 0.005);
 }
 	

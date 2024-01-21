@@ -8,6 +8,6 @@ target = 0;
 if(!isfrag) list = ds_list_create();
 turn_speed = 1;
 velocity = 1;
-image_xscale = image_xscale * global.upgrades.bullet_size;
+image_xscale = image_xscale + (image_xscale *  global.upgrades.bullet_size) ;
 image_yscale = image_xscale;
 
