@@ -17,14 +17,12 @@ switch(staff_type){
 		
 		staff_damage = 2;
 		sprite_index = spr_staff_blue;
-		shoot_timer = 60;
-		var percentage = shoot_time;
-		shoot_timer = shoot_timer - (percentage * global.upgrades.bullet_frequence);
+		shoot_timer = 45;
 		
 		
 		if(canshoot){
 			if(_mouse1){
-				shoot(make_color_rgb(0, 255, 255), 2, 0.5, 0, 5);
+				shoot(make_color_rgb(0, 255, 255), 2, 0.5, 0, 3);
 				shoot_time = shoot_timer;
 				canshoot = 0;
 			}
@@ -32,7 +30,7 @@ switch(staff_type){
 		
 		
 		if(!canshoot){
-			shoot_time --;
+			shoot_time -= 1 + global.upgrades.bullet_frequence;
 			if(shoot_time <= 0){
 				canshoot = 1;	
 			}
@@ -41,7 +39,7 @@ switch(staff_type){
 	case "green":{
 		sprite_index = spr_staff_green;
 		staff_damage = 1;
-		shoot_timer = 60 * global.upgrades.bullet_frequence;
+		shoot_timer = 35;
 		if(canshoot){
 			if(_mouse1){
 				shoot(make_color_rgb(0, 255, 0), 2, 0.4, 1, 2);
@@ -52,7 +50,7 @@ switch(staff_type){
 		
 		
 		if(!canshoot){
-			shoot_time --;
+			shoot_time -= 1 + global.upgrades.bullet_frequence;
 			if(shoot_time <= 0){
 				canshoot = 1;	
 			}
@@ -86,7 +84,7 @@ switch(staff_type){
 			}
 			if(attacking) {
 				if(slash == 1) {
-					image_xscale = 1 + (1 * var3);
+					image_xscale = 1 + (0.5 * var3);
 					image_yscale = image_xscale;
 					sprite_index = spr_staff_red_slash1;
 							with (instance_place(x, y, obj_enemy_1)) {
@@ -102,7 +100,7 @@ switch(staff_type){
 
 				}
 				if(slash == 2) {
-					image_xscale = 1 + (1 * var3);
+					image_xscale = 1 + (0.5 * var3);
 					image_yscale = image_xscale;
 					sprite_index = spr_staff_red_slash2;
 							with (instance_place(x, y, obj_enemy_1)) {
@@ -121,7 +119,7 @@ switch(staff_type){
 			show_debug_message(image_speed);
 			shoot_timer = 1;
 			
-			image_speed = 1 + (1 * global.upgrades.bullet_frequence);
+			image_speed = 1 + (0.5 * global.upgrades.bullet_frequence);
 			
 			
 			

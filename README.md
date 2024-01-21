@@ -11,3 +11,9 @@ Commit (01/21/2024) The Feedbacker staff(red staff) added
 now the most of card added works well
 balance of the staffs
 Charge upgrade now works
+
+Commit (01/21/2024)
+The Feedbacker staff balanced
+menu work in progress (WIP)
+Shining Esmerald (green staff) balanced and working well
+Resonance Card Buffed and ajusted

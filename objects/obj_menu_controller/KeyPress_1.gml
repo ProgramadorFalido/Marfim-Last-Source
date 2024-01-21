@@ -1,5 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(!menu_step) menu_step ++;
 
-obj_player.player_life -= damage;
-instance_destroy();

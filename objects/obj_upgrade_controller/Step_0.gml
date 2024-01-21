@@ -20,15 +20,15 @@ global.upgrades_images = [
 { //2
 	img : spr_atkspdupgrade,
 	title: "Resonace",
-	text : "commun card, increase 12% of you total attack speed (affect ''The Feedbacker staff'' )",
-	up : global.upgrades.bullet_frequence + 0.12,
+	text : "commun card, increase 15% of you total attack speed (affect ''The Feedbacker staff'' )",
+	up : global.upgrades.bullet_frequence + 0.15,
 	rarity : 0,
 },
 { //3
 	img : spr_atkspdupgrade,
 	title: "Resonace",
-	text : "uncommun card, increase 24% of you total attack speed (affect ''The Feedbacker staff'' )",
-	up : global.upgrades.bullet_frequence + 0.24,
+	text : "uncommun card, increase 30% of you total attack speed (affect ''The Feedbacker staff'' )",
+	up : global.upgrades.bullet_frequence + 0.30,
 	rarity : 1,
 },
 {// 4

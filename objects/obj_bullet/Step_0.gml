@@ -12,9 +12,31 @@ if(!isfrag){
 	}
 }
 
-// Set angle to direction
-image_angle = direction;
+if (target)
+{
+	if (instance_exists(target)){
+		/// @description Homing Missile Step
 
-// Set speed
-x = x + (dcos(direction) * velocity);
-y = y - (dsin(direction) * velocity);
+		// Vector angle between homing missile and target
+		var _point_difference = point_direction(x, y, target.x, target.y);
+
+		// Sin in degrees of vector angle minus current direction
+		var _angle_direction = dsin(_point_difference - direction);
+
+		// Determine which direction to turn and set direction
+		if(_angle_direction > 0)
+		{
+		direction = direction + turn_speed;
+		}
+		else if(_angle_direction < 0)
+		{
+		direction = direction - turn_speed;
+		}
+		// Set angle to direction
+		image_angle = direction;
+
+		// Set speed
+		x = x + (dcos(direction) * velocity);
+		y = y - (dsin(direction) * velocity);
+	}
+}

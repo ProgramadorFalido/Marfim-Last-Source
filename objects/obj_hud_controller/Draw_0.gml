@@ -9,7 +9,7 @@ draw_text(550, 64,"number of wave: " + string(obj_enemy_spawn.wave));
 
 draw_text(50, 540,"bulletsize upgrade: " + string(global.upgrades.bullet_size));
 draw_text(50, 640,"damage upgrade: " + string(global.upgrades.bullet_damage));
-draw_text(50, 620,"attspd upgrade: " + string(global.upgrades.bullet_frequence));
+draw_text(50, 620,"attspd upgrade: " + string(global.upgrades.bullet_frequence/0.15));
 draw_text(50, 600,"stability upgrade: " + string(global.upgrades.bullet_stability));
 draw_text(50, 580,"playerspd upgrade: " + string(global.upgrades.player_speed));
 draw_text(50, 560,"fragment. upgrade: " + string(global.upgrades.bullet_frag));
