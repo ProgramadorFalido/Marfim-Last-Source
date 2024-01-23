@@ -37,7 +37,9 @@ if (place_meeting(x + horizontal_speed,y,obj_enemy_1)){
 }
 x += horizontal_speed;
 
+if(player_life <= 0) state = "dead";
 
+player_life = clamp(player_life, 0, 99999999);
 
 obj_staff.x = x;
 obj_staff.y = y;

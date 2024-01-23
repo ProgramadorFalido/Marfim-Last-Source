@@ -17,3 +17,14 @@ The Feedbacker staff balanced
 menu work in progress (WIP)
 Shining Esmerald (green staff) balanced and working well
 Resonance Card Buffed and ajusted
+
+Commit (01/23/2024)
+The Feedbacker staff balanced
+Menu now is working, only keyboard(WIP)
+Death added (WIP, Press R to restart game)
+
+to do: make new cards(growth, impulse, fragment(WIP), swift, cloak, defense)
+EPIC Cards system
+new enemies
+new staffs (boomstick, trident, ice tip and rainbow)
+make hat system

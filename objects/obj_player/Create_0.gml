@@ -18,4 +18,6 @@ inground = 0;
 player_speed = 2;
 //player life
 player_life = 20;
+//player state
+state = "normal";
 //---------------------------------------------------

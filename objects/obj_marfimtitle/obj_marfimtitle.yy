@@ -1,19 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_enemy_1",
+  "name": "obj_marfimtitle",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "enemy things",
-    "path": "folders/Objects/enemy things.yy",
+    "name": "menu things",
+    "path": "folders/Objects/menu things.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -32,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_enemy_ph",
-    "path": "sprites/spr_enemy_ph/spr_enemy_ph.yy",
+    "name": "spr_marfimtitle",
+    "path": "sprites/spr_marfimtitle/spr_marfimtitle.yy",
   },
   "spriteMaskId": null,
   "visible": true,

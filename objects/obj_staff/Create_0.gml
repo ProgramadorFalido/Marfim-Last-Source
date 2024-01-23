@@ -5,8 +5,7 @@ angle = point_direction(x, y, mouse_x, mouse_y);
 
 shoot_timer = 0;
 shoot_time = 0;
-
-staff_type = "red";
+staff_type = obj_controller.staff_selected;
 
 attacking = 0;
 slash = 0;

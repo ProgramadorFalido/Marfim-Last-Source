@@ -11,7 +11,12 @@ menu[0] = "Staffs";
 menu[1] = "Hats";
 menu[2] = "Start run";
 menu[3] = "Options";
+rtposx = room_width/2 + 75;
+rtposy = room_height/2 + 160;
+rtsize = 1.5
 
+staffselected = 0;
+equipstaff = 0;
 
 
 index = 0;

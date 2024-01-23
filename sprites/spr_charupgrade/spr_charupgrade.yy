@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "upgrade images",
+    "path": "folders/Sprites/hud/upgrade images.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

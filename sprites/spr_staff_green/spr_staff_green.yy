@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "green staff",
+    "path": "folders/Sprites/player/staffs/green staff.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
