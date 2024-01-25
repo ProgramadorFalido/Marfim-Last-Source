@@ -20,4 +20,5 @@ player_speed = 2;
 player_life = 20;
 //player state
 state = "normal";
+totallife = player_life;
 //---------------------------------------------------

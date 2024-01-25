@@ -35,20 +35,30 @@ switch(upgradechoosen){
 	break;	
 	}
 	case 5:{
-		 global.upgrades.bullet_stability = upgrade_given;
+		global.upgrades.bullet_stability = upgrade_given;
 	break;	
 	}
 	case 6:{
-		 global.upgrades.bullet_stability = upgrade_given;
+		global.upgrades.player_jump = upgrade_given;
+		 
+			 
 	break;	
 	}
-	
-		
+	case 7:{
+		global.upgrades.player_health = upgrade_given;
+		obj_player.player_life  += 10;
+
+	break;	
+	}
+	case 8:{
+		 global.upgrades.bullet_frag = upgrade_given;
+	break;	
+	}	
 }
 
 
 
-
+obj_enemy_spawn.wave_passed = 0;
 global.upgrading = false;
 instance_deactivate_object(obj_upgrader);
 instance_destroy(obj_upgradecard);

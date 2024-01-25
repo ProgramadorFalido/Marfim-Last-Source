@@ -14,7 +14,7 @@ staff_damage = 2 ;
 
 canshoot = 1;
 
-list = ds_list_create();
+atklist = ds_list_create();
 
 function shoot(_color, _health, _bsm, _havetarget, _speed){
 	var _lhx = x + lengthdir_x(60, angle);
@@ -23,7 +23,7 @@ function shoot(_color, _health, _bsm, _havetarget, _speed){
 	var _bullet = instance_create_layer(_lhx, _lhy, "shoots", obj_bullet);
 	_bullet.speed = _speed * global.upgrades.bullet_speed;
 	_bullet.direction = image_angle;
-	_bullet.damage = staff_damage + global.upgrades.bullet_damage;
+	_bullet.damage = staff_damage;
 	_bullet.image_blend = _color;
 	_bullet.bullet_health = _health;
 	if(_havetarget){
@@ -36,13 +36,15 @@ function shoot(_color, _health, _bsm, _havetarget, _speed){
 }
 
 function slashbullet(_health, _bsm, _havetarget, _speed){
-	var _lhx = x + lengthdir_x(60, angle);
-	var _lhy = y + lengthdir_y(60, angle);
+	var _lhx = x + lengthdir_x(60 * image_xscale, angle);
+	var _lhy = y + lengthdir_y(60 * image_yscale, angle);
 	
+	
+	show_debug_message("slash criado")
 	var _bullet = instance_create_layer(_lhx, _lhy, "shoots", obj_slash);
 	_bullet.direction = image_angle;
 	_bullet.speed = _speed * global.upgrades.bullet_speed;
-	_bullet.damage = staff_damage + global.upgrades.bullet_damage;
+	_bullet.damage = staff_damage / 3;
 	_bullet.bullet_health = _health;
 	if(_havetarget){
 		with(_bullet){

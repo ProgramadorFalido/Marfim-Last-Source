@@ -28,3 +28,20 @@ EPIC Cards system
 new enemies
 new staffs (boomstick, trident, ice tip and rainbow)
 make hat system
+
+Commit (01/25/2024) 1.04 Version
+The Feedbacker staff balanced
+shaphire tip balanced
+Menu now is working well(WIP)
+Death added (WIP, Press R to restart game)
+new cards (growth, impulse, fragment(WIP))
+game graphics improved
+new enemy and new wave system
+
+
+to do: make new cards(swift, cloak, defense, sight)
+EPIC Cards system
+crits system
+new enemies
+new staffs (boomstick, trident, ice tip and rainbow)
+make hat system

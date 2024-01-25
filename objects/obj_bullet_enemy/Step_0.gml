@@ -3,9 +3,7 @@
 
 
 
-if(place_meeting(x, y, obj_colider)){
-	instance_destroy();
-}
+
 
 with (instance_place(x, y, obj_bullet)) {
    if (ds_list_find_index(other.list, id) == -1) {
@@ -13,3 +11,6 @@ with (instance_place(x, y, obj_bullet)) {
       ds_list_add(other.list, id);
    }
 }
+
+
+if(global.upgrading) instance_destroy();

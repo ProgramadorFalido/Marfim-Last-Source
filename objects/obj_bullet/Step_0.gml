@@ -40,3 +40,5 @@ if (target)
 		y = y - (dsin(direction) * velocity);
 	}
 }
+
+if(global.upgrading) instance_destroy();

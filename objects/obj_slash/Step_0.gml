@@ -4,13 +4,20 @@
 	instance_destroy();
 }*/
 
-with (instance_place(x, y, obj_enemy_1)) {
-		if (ds_list_find_index(other.list, id) == -1) {
-			life -= global.upgrades.bullet_damage / 2.5;
-			ds_list_add(other.list, id);
-	}	
-}
+var _list = ds_list_create();
+var _num = instance_place_list(x, y, obj_enemy_1, _list, false);
 
+if _num > 0{
+    for (var i = 0; i < _num; ++i;){
+        var _enemyid = (_list[| i]);
+		if(ds_list_find_index(atklist2, _enemyid) == -1){
+			ds_list_add(atklist2, _enemyid);
+			_enemyid.life -= damage;
+			show_debug_message("dano com slash na entidade: " + string(_enemyid));
+		}
+    }
+}
+ds_list_destroy(_list)
 // Set angle to direction
 image_angle = direction;
 
@@ -19,6 +26,6 @@ x = x + (dcos(direction) * velocity);
 y = y - (dsin(direction) * velocity);
 
 life --;
-image_alpha = life / 25;
+image_alpha = life / total_life;
 
 if (life <= 0) instance_destroy();

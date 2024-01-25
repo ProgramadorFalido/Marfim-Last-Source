@@ -1,7 +1,6 @@
 /// @description
 
 
-
 //Inputs
 
 var _left, _right, _jump;
@@ -45,3 +44,6 @@ switch(state){
 		break;
 	}
 }
+
+jump_speed = -13 - (13 * global.upgrades.player_jump);
+totallife = 20 + global.upgrades.player_health;

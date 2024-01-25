@@ -17,7 +17,14 @@ rtsize = 1.5
 
 staffselected = 0;
 equipstaff = 0;
-
+bmselect = 0;
+clickable_again = 1;
 
 index = 0;
 index2 = 0;
+
+lefthold = 0
+righthold = 0
+
+width = display_get_gui_width();
+height = display_get_gui_height();

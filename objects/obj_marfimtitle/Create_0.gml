@@ -4,6 +4,3 @@ x = room_width / 2;
 timer = 60;
 time = 0;
 inity = y;
-
-
-
